@@ -1,1 +1,1 @@
-# PokemonTypePredictor
+# PokemonTypeClassifier
