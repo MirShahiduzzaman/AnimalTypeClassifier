@@ -58,7 +58,7 @@ Using bagging and random forest classifiers did not significantly increase the a
   - Gini scored 0.51
 
 ## Conclusion
-The performance scores of our models were simply too low. The highest accuracy from the models was 52%
+The highest accuracy from the models was 52% - 4 times more accurate than random guesses, but still too low.
 
 Why could this be the case?
 - We are missing vital information such as appearance, color, etc.
