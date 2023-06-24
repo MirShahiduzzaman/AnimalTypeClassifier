@@ -1,6 +1,23 @@
 # Animal/Pokemon Type Classifier
 ## Table of Contents
-- [Real World Application](##Real-World-Application)
+- [Real World Application](#Real-World-Application)
+- [Premise](#Premise)
+- [Purpose](#Purpose)
+- [What are Types?](#What-are-Types?)
+- [Challenges](#Challenges)
+- [Preprocessing](#Preprocessing)
+- [Data Sets](#Data-Sets (6 Total))
+- [Binning for Categorical](#Binning-for-Categorical)
+- [Class Distribution for type 1 for the 3 datasets](#Class-Distribution-for-type-1-for-the-3-datasets)
+- [Assumptions](#Assumptions)
+- [Feature Selection](#Feature-Selection)
+- [Results of Accuracy Testing](#Results-of-Accuracy-Testing)
+- [Initial Mistakes](#Initial-Mistakes)
+- [Classifiers](#Classifiers)
+- [Ensemble](#Ensemble)
+- [Conclusion](#Conclusion)
+- [Next Steps](#Next-Steps)
+
 
 ## Real World Application
 We wanted to tackle the issue of animal cruelty in laboratories while also appealing to several age groups. Thus, we decided to investigate patterns in one characteristic of pokemon, animals from a TV show, without using data that requires them to fight one another.
