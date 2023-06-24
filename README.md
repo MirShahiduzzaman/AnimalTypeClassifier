@@ -3,7 +3,7 @@
 We wanted to tackle the issue of animal cruelty in laboratories while also appealing to several age groups. Thus, we decided to investigate patterns in one characteristic of pokemon, animals from a TV show, without using data that requires them to fight one another.
 
 ## Premise
-In this hypothetical scenario, we are a team of pokemon researchers in the pokemon world and we want to build a classifier to help identify elemental types for newly discovered pokemons.
+In this hypothetical scenario, we are a team of pokemon researchers in the pokemon world and we want to build a classifier to help identify elemental types for newly discovered pokemon.
 
 ## Purpose
 Why is a type classifier meaningful for pokemon research?
@@ -23,7 +23,7 @@ In order to best use our classifiers, we took out columns we knew for sure to be
 
 ![image](https://github.com/MirShahiduzzaman/AnimalTypeClassifier/assets/43242843/26c72275-c8c4-42aa-a018-aa906b085d22)
 
-8th generation pokemons had missing column data. We decided to fill it in the csv, manually with the correct values from online sources as there weren’t too many missing values.
+8th generation pokemon had missing column data. We decided to fill it in the csv, manually with the correct values from online sources as there weren’t too many missing values.
 
 ## Data Sets (6 Total)
 - DF1: Only look at type_1 of pokemon
