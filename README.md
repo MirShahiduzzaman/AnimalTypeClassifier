@@ -1,6 +1,5 @@
 # Animal/Pokemon Type Classifier
 ## Table of Contents
-- [Real World Application](#Real-World-Application)
 - [Premise](#Premise)
 - [Purpose](#Purpose)
 - [What are Types?](#What-are-Types?)
@@ -18,11 +17,9 @@
 - [Conclusion](#Conclusion)
 - [Next Steps](#Next-Steps)
 
-
-## Real World Application
+## Premise
 We wanted to tackle the issue of animal cruelty in laboratories while also appealing to several age groups. Thus, we decided to investigate patterns in one characteristic of pokemon, animals from a TV show, without using data that requires them to fight one another.
 
-## Premise
 In this hypothetical scenario, we are a team of pokemon researchers in the pokemon world and we want to build a classifier to help identify elemental types for newly discovered pokemon.
 
 <img src = 'https://github.com/MirShahiduzzaman/AnimalTypeClassifier/assets/43242843/2fb2128a-7cb0-400f-9d69-09b25f898e83' height = '150'>
