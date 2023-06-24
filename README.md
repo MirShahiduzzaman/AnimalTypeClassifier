@@ -1,6 +1,6 @@
 # Animal/Pokemon Type Classifier
 ## Real World Application
-We wanted to tackle the issue of animal cruelty in laboratories while also appealing to several age groups. Thus, we decided to investigate patterns in one characteristic of Pokemon (animals from a TV show), without using data that requires them to fight one another.
+We wanted to tackle the issue of animal cruelty in laboratories while also appealing to several age groups. Thus, we decided to investigate patterns in one characteristic of pokemon, animals from a TV show, without using data that requires them to fight one another.
 
 ## Premise
 In this hypothetical scenario, we are a team of pokemon researchers in the pokemon world and we want to build a classifier to help identify elemental types for newly discovered pokemons.
