@@ -5,6 +5,8 @@ We wanted to tackle the issue of animal cruelty in laboratories while also appea
 ## Premise
 In this hypothetical scenario, we are a team of pokemon researchers in the pokemon world and we want to build a classifier to help identify elemental types for newly discovered pokemon.
 
+<img src = 'https://github.com/MirShahiduzzaman/AnimalTypeClassifier/assets/43242843/2fb2128a-7cb0-400f-9d69-09b25f898e83' height = '150'>
+
 ## Purpose
 Why is a type classifier meaningful for pokemon research?
 - Pokemon data is discovered in this world
@@ -36,11 +38,49 @@ But this confuses the classifier because there are 2 of the same pokemon (have s
 
 For each of the three datasets, we then created a numerical and categorical version: 3 x 2 = 6
 
+## Binning for Categorical
+Height, Weight, HP, Attack, Defense, Special Attack, Special Defense, Speed, Total Points, Catch Rate, Base Experience, Egg Cycle
+Use equal frequency for most because most were skewed
+Replaced outliers with upper bound
+
+<img src = 'https://github.com/MirShahiduzzaman/AnimalTypeClassifier/assets/43242843/661847dc-3897-4224-9254-dabb26ef7f0b' height = '220'>
+<img src = 'https://github.com/MirShahiduzzaman/AnimalTypeClassifier/assets/43242843/3655ade4-c0af-4eb3-8c41-1f9817787fce'>
+
+## Class Distribution for type 1 for the 3 datasets
+![image](https://github.com/MirShahiduzzaman/AnimalTypeClassifier/assets/43242843/08183847-3a49-4c2d-9330-6e853dfcb67e)
+
 ## Assumptions
 - Every pokemon has the following features:
 ['status', 'type_1', 'height_m', 'weight_kg', 'total_points', 'hp', 'attack', 'defense', 'sp_attack', 'sp_defense', 'speed', 'catch_rate', 'base_experience', 'growth_rate', 'egg_type_1', 'egg_cycles']
 - For dataset 1 and 2: Type 1 is the primary type of the pokemon
 - For dataset 3: Type 1 and 2 are equally important
+
+## Feature Selection
+- For each dataset variation, we had to select the best features to use
+- First, we set up the parameters for cross validation and dataset.
+    - We wanted to optimize the best K for each run of selection.
+- Next, we ran the feature selection using our K parameter for Chi2 and mutual info, on each of the 6 datasets.
+    - We recorded multiple rounds of feature selected performance results to find the best K.
+
+<img src = 'https://github.com/MirShahiduzzaman/AnimalTypeClassifier/assets/43242843/025bfc99-cc2c-4242-840e-dfc06e55a174' height = '150'>
+
+## Results of Accuracy Testing
+- Dropping class labels (types) made our classifiers more accurate
+    - Dropping the 8 lowest classes gave us the best results without compromising our results too much
+- Accuracy values for datasets B (categorical) were higher than A (continuous) in general
+- K values for our feature selection worked best at around 15-25 for most datasets
+- The top 3 classifiers after initially testing:
+    - BernoulliNB     - .52
+    - MultinomialNB - .51
+    - DStree Gini     - .47
+
+<img src = 'https://github.com/MirShahiduzzaman/AnimalTypeClassifier/assets/43242843/4fe32916-2562-4cb5-8093-669c3f837f77' height = '150'>
+
+## Initial Mistakes
+- Looking at strongest pokemon instead of the classifying by types
+- Duplicating the pokemon with 2 types instead of removing them
+    - This became our dataset 3; which had the least accuracy
+<img src = 'https://github.com/MirShahiduzzaman/AnimalTypeClassifier/assets/43242843/b7bfba76-87e5-4206-9edf-e6bf646c4867' height = '200'>
 
 ## Classifiers
 1. Naive Bayes 
