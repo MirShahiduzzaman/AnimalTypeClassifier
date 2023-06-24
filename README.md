@@ -1,4 +1,7 @@
 # Animal/Pokemon Type Classifier
+## Table of Contents
+- [Real World Application](##Real-World-Application)
+
 ## Real World Application
 We wanted to tackle the issue of animal cruelty in laboratories while also appealing to several age groups. Thus, we decided to investigate patterns in one characteristic of pokemon, animals from a TV show, without using data that requires them to fight one another.
 
